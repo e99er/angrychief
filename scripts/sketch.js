@@ -36,7 +36,7 @@ function preload() {
     coco = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/coco.jpg');
     louis = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/louis.png');
     moncler = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/moncler.png');
-    phone = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/phone.jpeg');
+    phone = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/phone.png');
     p8 = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/p8.png');
 }
 
@@ -48,12 +48,12 @@ function setup() {
     world = engine.world;
     ground = new Ground(width / 2, height - 10, width, 20);
 
-    boxes[5] = new Box(1050, 300, 100, 100, p8);
-    boxes[4] = new Box(1050, 300, 170, 100, phone);
+    boxes[4] = new Box(1050, 300, 60, 120, phone);
     boxes[3] = new Box(1050, 300, 170, 100, moncler);
+    boxes[5] = new Box(1050, 300, 90, 90, p8);
     boxes[2] = new Box(1050, 300, 200, 70, louis);
     boxes[1] = new Box(1050, 300, 270, 150, tesla);
-    boxes[0] = new Box(1050, 300, 540, 200, coco);
+    boxes[0] = new Box(1050, 300, 450, 190, coco);
     // for (let i = 0; i < 3; i++) {
     //     boxes[i] = new Box(1050, 300, 240, 200);
     // }
