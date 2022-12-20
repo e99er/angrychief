@@ -1,5 +1,5 @@
 class Box {
-    constructor(x, y, w, h) {
+    constructor(x, y, w, h, img) {
         const options = {
             restitution: 0.5
         };
@@ -7,6 +7,7 @@ class Box {
         Matter.World.add(world, this.body);
         this.w = w;
         this.h = h;
+        this.img = img
     }
 
     show() {
@@ -18,7 +19,7 @@ class Box {
         fill(255);
         rectMode(CENTER);
         imageMode(CENTER);
-        image(boxImg, 0, 0, this.w, this.h);
+        image(this.img, 0, 0, this.w, this.h);
         pop();
     }
 }
