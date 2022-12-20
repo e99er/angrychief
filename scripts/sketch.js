@@ -48,9 +48,9 @@ function setup() {
     world = engine.world;
     ground = new Ground(width / 2, height - 10, width, 20);
 
-    boxes[4] = new Box(1050, 300, 60, 120, phone);
-    boxes[3] = new Box(1050, 300, 110, 100, moncler);
-    boxes[5] = new Box(1050, 300, 90, 90, p8);
+    boxes[5] = new Box(1050, 300, 60, 120, phone);
+    boxes[4] = new Box(1050, 300, 110, 100, moncler);
+    boxes[3] = new Box(1050, 300, 90, 90, p8);
     boxes[2] = new Box(1050, 300, 200, 70, louis);
     boxes[1] = new Box(1050, 300, 270, 150, tesla);
     boxes[0] = new Box(1050, 300, 450, 190, coco);
