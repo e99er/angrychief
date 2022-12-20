@@ -27,13 +27,17 @@ let boxImg;
 let bkgImg;
 
 function preload() {
-    dotImg = loadImage('images/dot.png');
+    /* dotImg = loadImage('images/dot.png');
     boxImg = loadImage('images/equals.png');
-    bkgImg = loadImage('images/skyBackground.png');
+    bkgImg = loadImage('images/skyBackground.png'); */
+    dotImg = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/dot.png');
+    boxImg = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/equals.png');
+    bkgImg = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/skyBackground.png');
 }
 
 function setup() {
-    const canvas = createCanvas(711, 400);
+    // const canvas = createCanvas(711, 400);
+    const canvas = createCanvas(displayWidth, displayHeight);
     engine = Engine.create();
     world = engine.world;
     ground = new Ground(width / 2, height - 10, width, 20);
