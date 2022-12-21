@@ -27,10 +27,8 @@ let boxImg;
 let bkgImg;
 
 function preload() {
-    /* dotImg = loadImage('images/dot.png');
-    boxImg = loadImage('images/equals.png');
-    bkgImg = loadImage('images/skyBackground.png'); */
-    dotImg = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/chief1.png');
+    let chiefNr = Math.floor(Math.random() * 3) + 1;
+    dotImg = loadImage(`https://raw.githubusercontent.com/e99er/angrychief/main/images/chief${chiefNr}.png`);
     bkgImg = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/darkgarda.jpg');
     tesla = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/tesla.png');
     coco = loadImage('https://raw.githubusercontent.com/e99er/angrychief/main/images/coco.jpg');
@@ -41,7 +39,6 @@ function preload() {
 }
 
 function setup() {
-    // 16by9
     // const canvas = createCanvas(711, 400);
     const canvas = createCanvas(1500, 800);
     engine = Engine.create();
@@ -52,11 +49,8 @@ function setup() {
     boxes[4] = new Box(1050, 300, 110, 100, moncler);
     boxes[3] = new Box(1050, 300, 90, 90, p8);
     boxes[2] = new Box(1050, 300, 200, 70, louis);
-    boxes[1] = new Box(1050, 300, 270, 150, tesla);
+    boxes[1] = new Box(1050, 300, 290, 150, tesla);
     boxes[0] = new Box(1050, 300, 450, 190, coco);
-    // for (let i = 0; i < 3; i++) {
-    //     boxes[i] = new Box(1050, 300, 240, 200);
-    // }
     bird = new Bird(250, 500, 70);
 
     slingshot = new SlingShot(250, 500, bird.body);

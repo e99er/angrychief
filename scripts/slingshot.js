@@ -19,7 +19,7 @@ class SlingShot {
 
     show() {
         if (this.sling.bodyB) {
-            stroke(0);
+            stroke('white');
             strokeWeight(4);
             const posA = this.sling.pointA;
             const posB = this.sling.bodyB.position;
